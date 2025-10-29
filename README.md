@@ -17,3 +17,35 @@
 -> Also Host Our App into HTTPs
 -> Tree Shaking - remove unused code
 -> Different dev and prod bundles
+
+
+
+# Food Ordering App
+**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Cart
+ * -search
+ * -RestaurantContainer
+ *   - Restaurant Card
+ *     - Image
+ *       - Name of resto,cuisines,rating, cost for two,
+ * Footer
+ * - Copyright
+ * - Links
+ * - Address
+ * - Contact
+ */
+
+
+Two types of Export/Import:-
+
+=> Default Export/Import:
+    export default Component;
+    import Component from "path";
+
+
+=> Named Export/Import:(when we have to export multiple thing from one file then we use Named Export/Import)
+   export const Component;
+   import {Component} from "path";
