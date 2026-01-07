@@ -52,7 +52,7 @@ if(onlineStatus === false)
   return listOfRestaurants.length === 0 ? (
   <Shimmer />
   ) : (
-    <div className="body bg-[#F4FFC3] ">
+    <div className="body bg-[#F4FFC3]"> 
       <div className="filter flex">
         <div className=" search m-3 p-3">
           <input type="text" className=" bg-white border border-solid border-black" 
