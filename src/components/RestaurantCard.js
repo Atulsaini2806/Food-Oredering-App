@@ -8,21 +8,49 @@ const RestaurantCard = ({ resData }) => {
 
   const { name, cuisines, avgRating, costForTwo,sla, cloudinaryImageId } = resData.info;
 
+  // return (
+  //   <div className="m-3 p-3 w-[200px] h-[450px] rounded-lg bg-gray-200 hover:bg-gray-300">
+  //     <img
+  //       className="rounded-lg "
+  //       alt={name}
+  //       src={`${CDN_URL}${cloudinaryImageId}`} 
+  //     />
+  //     <h4 className="font-bold py-3 text-sm">{name}</h4>
+  //     <h4>{cuisines.join(", ")}</h4>
+  //     <h4>{avgRating} ⭐</h4>
+  //     <h4>{costForTwo}</h4>
+  //     <h4>{sla.deliveryTime} mins</h4>
+  //      <h4>User : {loggedInUser} </h4> 
+  //   </div>
+  // );
   return (
-    <div className="m-3 p-3 w-[200px] h-[450px] rounded-lg bg-gray-200 hover:bg-gray-300">
+    <div className="m-3 p-3 w-[200px] h-[320px] rounded-lg bg-gray-200 hover:bg-gray-300 flex flex-col">
+      
+      {/* IMAGE */}
       <img
-        className="rounded-lg"
+        className="rounded-lg h-[140px] w-full object-cover"
         alt={name}
-        src={`${CDN_URL}${cloudinaryImageId}`} 
+        src={`${CDN_URL}${cloudinaryImageId}`}
       />
-      <h4 className="font-bold py-3 text-sm">{name}</h4>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating} ⭐</h4>
-      <h4>{costForTwo}</h4>
-      <h4>{sla.deliveryTime} mins</h4>
-       <h4>User : {loggedInUser} </h4> 
+
+      {/* CONTENT */}
+      <div className="flex flex-col justify-between grow">
+        <div>
+          <h4 className="font-bold pt-2 text-sm line-clamp-2">{name}</h4>
+          <h4 className="text-xs text-gray-600 line-clamp-2">
+            {cuisines.join(", ")}
+          </h4>
+        </div>
+        <div className="text-sm mt-2">
+          <h4>{avgRating} ⭐</h4>
+          <h4>{costForTwo}</h4>
+          <h4>{sla.deliveryTime} mins</h4>
+          <h4 className="text-xs">User : {loggedInUser}</h4>
+        </div>
+      </div>
     </div>
   );
+  
 };
 
 //higher order function
