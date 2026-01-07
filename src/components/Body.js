@@ -52,10 +52,10 @@ if(onlineStatus === false)
   return listOfRestaurants.length === 0 ? (
   <Shimmer />
   ) : (
-    <div className="body">
+    <div className="body bg-[#F4FFC3] ">
       <div className="filter flex">
         <div className=" search m-3 p-3">
-          <input type="text" className="border border-solid border-black" 
+          <input type="text" className=" bg-white border border-solid border-black" 
           value={searchText}
            onChange={(e) => {
             setSearchText(e.target.value);
@@ -88,7 +88,7 @@ if(onlineStatus === false)
         <div className = "search m-4 p-4">
           <label> UserName : </label>
 
-          <input className="border  border-black py-0.5" 
+          <input className=" bg-white border  border-black py-0.5" 
           value={loggedInUser}
           onChange={(e) =>
              setUserName(e.target.value)} 
