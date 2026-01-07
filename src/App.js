@@ -11,6 +11,7 @@ import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
 
 //import Grocery from "./components/Grocery";
 
@@ -39,10 +40,16 @@ const AppLayout = () => {
  
   return (
     <Provider store ={appStore}>
-        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-          <div className="app"></div>
-      <Header />
-      <Outlet />
+        <UserContext.Provider value={{ loggedInUser: 
+          userName, setUserName }}>
+        
+      <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="grow">
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
        </UserContext.Provider>
        </Provider>
 
