@@ -31,10 +31,10 @@ console.log(cartItems);
 
 
   return (
-    <div className="flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-100 md:bg-green-100 lg:bg-purple-100">
+    <div className="p-2 flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-100 md:bg-green-100 lg:bg-purple-100">
       <div className="logo-container">
         <img
-          className="w-30"
+          className="w-23 rounded-xl shadow-lg"
           src={LOGO_URL}
           alt="logo"
         />
@@ -56,7 +56,7 @@ console.log(cartItems);
           <li className="px-4"> 
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li className="px-4 font-bold text-xl">
+          <li className="px-4">
            <Link to="/cart"> Cart -({cartItems.length} items)</Link></li>
 
           <button 
