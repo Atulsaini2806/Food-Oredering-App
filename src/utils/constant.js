@@ -3,4 +3,4 @@
 
 
 export const LOGO_URL =
-     "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=food";
+     "https://img.freepik.com/premium-vector/burger-logo-design-vector-fast-food-restaurant-cafe-symbol_18099-2286.jpg";
