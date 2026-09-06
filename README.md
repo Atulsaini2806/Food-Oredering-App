@@ -1,4 +1,4 @@
-# I am learning React.
+# I am learning React.........
 
 # what does the parcel do:-
 -> Dev Build
@@ -64,7 +64,7 @@
 
 
 # class based componet life cycle:-
-#  when we have only one child-
+# when we have only one child-
 - Parent constructor
 - Parent render
 
@@ -91,8 +91,6 @@
    - Second child componentDidMount
 
 - Parent componentDidMount
-
-
 
 
 
