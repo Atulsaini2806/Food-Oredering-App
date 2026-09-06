@@ -26,11 +26,11 @@
  *  - Logo
  *  - Nav Items
  * Cart
- * -search
- * -RestaurantContainer
+ *   - search
+ *   - RestaurantContainer
  *   - Restaurant Card
- *     - Image
- *       - Name of resto,cuisines,rating, cost for two,
+ *   - Image
+ *   - Name of resto,cuisines,rating, cost for two,
  * Footer
  * - Copyright
  * - Links
